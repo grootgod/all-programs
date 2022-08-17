@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+    .demo{
+      background-color: brown;
+      font-style: italic;
+      font-weight: 700;
+      box-shadow: 10px 10px 20px rgb(0,0,10,20),
+      0.6px 8px rgba(0,0,0,30);
+      border-radius: 20px;
+    
+    }
+</style>
+</head>
+<body>
+   <h1> jQuery bdlclick event</h1>
+   <section>
+   <div>
+    <h3>double click function</h3>
+    <p>welcome to jawascript double click functionality</p>
+    <div id="mydiv1" style="height: 300px; width: 200px; background-color: royalblue;" ></div>
+   </div> 
+   </section>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+    $(document).ready(function(){
+    $("div").dblclick(function(){
+       $(this).addclass("demo");
+       $("#mydiv1").fadeIn(1000);
+    });
+    });    
+   </script>
+
+</body>
+</html>

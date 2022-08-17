@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box{
+          border: 5px outset rgb(0, 153, 255);
+          background-color: rgb(3, 248, 175);    
+          text-align: center;
+        }
+        </style>
+    <title>Document</title>
+</head>
+<body>
+     <h1>jQuery fadeIn & fadeOut Method</h1>
+
+<div class="box">
+
+<h2>Test Box</h2>
+<p>Lorem ipsum <span>dolor sit amet</span>, cons
+</div>
+<br>
+<button id="fadeOutBtn">fadeOut</button>
+<button id="fadeInBtn">fadeIn</button>
+<button id="fadeToggleBtn">fadeToggle</button>
+
+<script src="js/jquery.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('#fadeInBtn').click(function(){
+        $('box').fadeout(3000,function(){
+    console.log("now it is hidden");
+    });   
+  });
+$('#fadeInBtn').click(function(){
+    $('box').fadein(3000,function(){
+    console.log("now it is hidden");
+ });
+});
+$('#fadeInBtn').click(function(){
+    $('box').fadetoggle(2000,function(){
+        console.log("now it is hidden"); 
+      });
+    });
+  });   
+
+</script>
+
+    
+</body>
+</html>
